@@ -224,6 +224,48 @@ header {
     margin-top: 15px;
     color: #ffffff;
 }
+
+/* some fact section start */
+
+.some{
+    margin-top: 170px;
+}
+.some-title h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+.some-title p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 25px;
+    color: rgb(114, 114, 114);
+}
+.some-fact{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.items{
+    height: 242px;
+    width: 245px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 46px 37px 60px 36px;
+    border: 1px solid rgb(255, 144, 14);
+}
+.items h1{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: rgb(66, 66, 66);
+}
+.items p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: rgb(114, 114, 114);
+}
 /* responsive media queary mobile device */
 
 @media screen and (max-width: 576px) {
