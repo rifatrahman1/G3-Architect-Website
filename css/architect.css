@@ -77,3 +77,22 @@ header{
 .hero-description img{
     margin-top: 50px;
 }
+
+
+/* responsive media queary mobile device */
+
+@media screen and (max-width: 576px) {
+    .architect{
+        padding-top: 20px;
+        flex-direction: column;
+    }  
+    .architect-link{
+        margin-top: 20px;
+    }  
+    .hero{
+        padding: 15px;
+    }
+    .hero-description img{
+        width: 100%;
+    }
+}
