@@ -229,7 +229,7 @@ header {
 @media screen and (max-width: 576px) {
 
     .architect,
-    .our-feature {
+    .our-feature{
         padding-top: 20px;
         flex-direction: column;
     }
@@ -239,7 +239,7 @@ header {
     }
 
     .hero,
-    .our-feature-description {
+    .our-feature-description{
         padding: 15px;
     }
 
@@ -249,5 +249,15 @@ header {
 
     .our-feature-images {
         grid-template-columns: 1fr;
+    }
+    .feature-enjoy-images img{
+        width: 100%;
+    }
+    .feature-enjoy{
+        width: 100%;
+        flex-direction: column;
+    }
+    .experience{
+        left: 90px;
     }
 }
