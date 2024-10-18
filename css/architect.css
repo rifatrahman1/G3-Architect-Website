@@ -42,3 +42,38 @@ header{
     text-decoration: none;
     color: rgb(66, 66, 66);
 }
+
+/* hero section start */
+
+.hero{
+    margin-top: 105px;
+    padding-bottom: 45px;
+}
+.hero-description{
+    text-align: center;
+}
+.hero-description h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+}
+.hero-description p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 32px;
+    color: rgb(114, 114, 114);
+}
+.hero-description button{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 32px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 144, 14);
+}
+.hero-description img{
+    margin-top: 50px;
+}
