@@ -1,0 +1,44 @@
+/* some common css style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* nav section start */
+
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.architect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.architect-title h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.architect-link ul li{
+    list-style: none;
+}
+.architect-link ul{
+    display: flex;
+    gap: 50px;
+}
+.architect-link ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
