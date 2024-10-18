@@ -177,7 +177,6 @@ header {
 
 .card {
     height: 175px;
-    width: 586px;
     border-radius: 8px;
     padding: 30px 35px;
     margin-top: 25px;
@@ -202,7 +201,7 @@ header {
     position: relative;
 }
 
-.experience{
+.experience {
     position: absolute;
     width: 342px;
     height: 200px;
@@ -213,12 +212,14 @@ header {
     border-radius: 10px;
     background-color: rgb(255, 144, 14);
 }
-.experience h1{
+
+.experience h1 {
     font-size: 65px;
     font-weight: 700;
     color: #ffffff;
 }
-.experience h3{
+
+.experience h3 {
     font-size: 25px;
     font-weight: 500;
     margin-top: 15px;
@@ -227,26 +228,30 @@ header {
 
 /* some fact section start */
 
-.some{
+.some {
     margin-top: 170px;
 }
-.some-title h1{
+
+.some-title h1 {
     font-size: 45px;
     font-weight: 700;
 }
-.some-title p{
+
+.some-title p {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     margin-top: 25px;
     color: rgb(114, 114, 114);
 }
-.some-fact{
+
+.some-fact {
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
 }
-.items{
+
+.items {
     height: 242px;
     width: 245px;
     text-align: center;
@@ -254,24 +259,73 @@ header {
     padding: 46px 37px 60px 36px;
     border: 1px solid rgb(255, 144, 14);
 }
-.items h1{
+
+.items h1 {
     font-size: 45px;
     font-weight: 600;
     margin-top: 10px;
     color: rgb(66, 66, 66);
 }
-.items p{
+
+.items p {
     font-size: 20px;
     font-weight: 600;
     margin-top: 5px;
     color: rgb(114, 114, 114);
+}
+
+/* our sponsors section start */
+
+.our-sponsors {
+    margin-top: 180px;
+}
+
+.sponsors-description {
+    text-align: center;
+}
+
+.sponsors-description h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.sponsors-description p {
+    font-size: 16px;
+    margin-top: 24px;
+    line-height: 26px;
+    color: rgb(114, 114, 114);
+}
+
+.sponsors-images {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    filter: grayscale(100%) contrast(101%);
+    -webkit-filter: grayscale(100%) contrast(101%);
+    -moz-filter: grayscale(100%) contrast(101%);
+    justify-content: space-between;
+}
+
+/* footer section start */
+
+.footer-section{
+    margin: 130px 0 216px 0;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: rgb(255, 244, 231);
+}
+.footer p{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(66, 66, 66);
 }
 /* responsive media queary mobile device */
 
 @media screen and (max-width: 576px) {
 
     .architect,
-    .our-feature{
+    .our-feature {
         padding-top: 20px;
         flex-direction: column;
     }
@@ -281,7 +335,8 @@ header {
     }
 
     .hero,
-    .our-feature-description{
+    .our-feature-description,
+    .some {
         padding: 15px;
     }
 
@@ -292,14 +347,38 @@ header {
     .our-feature-images {
         grid-template-columns: 1fr;
     }
-    .feature-enjoy-images img{
+
+    .feature-enjoy-images img {
+        padding: 15px;
         width: 100%;
     }
-    .feature-enjoy{
-        width: 100%;
+
+    .feature-enjoy {
+        padding: 15px;
         flex-direction: column;
     }
-    .experience{
+
+    .card {
+        height: 215px;
+    }
+
+    .experience {
         left: 90px;
+    }
+
+    .some-fact {
+        flex-direction: column;
+    }
+
+    .items {
+        margin-top: 15px;
+    }
+    .our-sponsors{
+        padding: 15px;
+    }
+    .sponsors-images{
+        display: grid;
+        row-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
