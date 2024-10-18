@@ -71,6 +71,7 @@ header{
     border: none;
     border-radius: 8px;
     margin-top: 32px;
+    cursor: pointer;
     color: rgb(255, 255, 255);
     background-color: rgb(255, 144, 14);
 }
@@ -78,7 +79,48 @@ header{
     margin-top: 50px;
 }
 
+/* our feature section start */
 
+.our-feature{
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.our-feature-images{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.our-feature-description h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: rgb(19, 19, 19);
+}
+.list{
+    color: rgb(114, 114, 114);
+}
+.feature{
+    color: rgb(255, 144, 14);
+}
+.our-feature-description p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 24px;
+    color: rgb(114, 114, 114);
+}
+.our-feature-description button{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 32px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 144, 14);
+}
 /* responsive media queary mobile device */
 
 @media screen and (max-width: 576px) {
