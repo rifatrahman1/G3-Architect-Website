@@ -1,42 +1,47 @@
 /* some common css style */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Work Sans", sans-serif;
 }
 
-.container{
+.container {
     max-width: 1440px;
     margin: 0 auto;
 }
 
 /* nav section start */
 
-header{
+header {
     background-color: rgba(255, 144, 14, 0.1);
 }
-.architect{
+
+.architect {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.architect-title h2{
+
+.architect-title h2 {
     font-size: 45px;
     font-weight: 700;
 }
-.architect-link ul li{
+
+.architect-link ul li {
     list-style: none;
 }
-.architect-link ul{
+
+.architect-link ul {
     display: flex;
     gap: 50px;
 }
-.architect-link ul li a{
+
+.architect-link ul li a {
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
@@ -45,26 +50,30 @@ header{
 
 /* hero section start */
 
-.hero{
+.hero {
     margin-top: 105px;
     padding-bottom: 45px;
 }
-.hero-description{
+
+.hero-description {
     text-align: center;
 }
-.hero-description h1{
+
+.hero-description h1 {
     font-size: 64px;
     font-weight: 700;
     line-height: 75px;
 }
-.hero-description p{
+
+.hero-description p {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     margin-top: 32px;
     color: rgb(114, 114, 114);
 }
-.hero-description button{
+
+.hero-description button {
     font-size: 20px;
     font-weight: 600;
     padding: 20px 25px;
@@ -75,42 +84,49 @@ header{
     color: rgb(255, 255, 255);
     background-color: rgb(255, 144, 14);
 }
-.hero-description img{
+
+.hero-description img {
     margin-top: 50px;
 }
 
 /* our feature section start */
 
-.our-feature{
+.our-feature {
     margin-top: 85px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.our-feature-images{
+
+.our-feature-images {
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(2, 1fr);
 }
-.our-feature-description h1{
+
+.our-feature-description h1 {
     font-size: 45px;
     font-weight: 700;
     color: rgb(19, 19, 19);
 }
-.list{
+
+.list {
     color: rgb(114, 114, 114);
 }
-.feature{
+
+.feature {
     color: rgb(255, 144, 14);
 }
-.our-feature-description p{
+
+.our-feature-description p {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     margin-top: 24px;
     color: rgb(114, 114, 114);
 }
-.our-feature-description button{
+
+.our-feature-description button {
     font-size: 20px;
     font-weight: 600;
     padding: 20px 25px;
@@ -121,23 +137,117 @@ header{
     color: rgb(255, 255, 255);
     background-color: rgb(255, 144, 14);
 }
+
+/* feature will enjoy section start */
+
+.feature-enjoy {
+    display: flex;
+    margin-top: 130px;
+    align-items: center;
+    gap: 150px;
+}
+
+.feature-enjoy-description h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    margin-left: 21px;
+    position: relative;
+}
+
+.feature-enjoy-description::before {
+    position: absolute;
+    content: "";
+    height: 105px;
+    width: 5px;
+    background-color: rgb(255, 144, 14);
+}
+
+.feature-p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 25px;
+    color: rgb(114, 114, 114);
+}
+
+.main-card {
+    margin-top: 30px;
+}
+
+.card {
+    height: 175px;
+    width: 586px;
+    border-radius: 8px;
+    padding: 30px 35px;
+    margin-top: 25px;
+    box-shadow: -4px -1px 22px -6px rgba(18, 17, 17, 0.48);
+    -webkit-box-shadow: -4px -1px 22px -6px rgba(18, 17, 17, 0.48);
+    -moz-box-shadow: -4px -1px 22px -6px rgba(18, 17, 17, 0.48);
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 10px;
+    color: rgb(114, 114, 114);
+}
+
+.feature-enjoy-images {
+    position: relative;
+}
+
+.experience{
+    position: absolute;
+    width: 342px;
+    height: 200px;
+    text-align: center;
+    padding: 45px;
+    bottom: -70px;
+    left: -95px;
+    border-radius: 10px;
+    background-color: rgb(255, 144, 14);
+}
+.experience h1{
+    font-size: 65px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.experience h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: #ffffff;
+}
 /* responsive media queary mobile device */
 
 @media screen and (max-width: 576px) {
-    .architect, .our-feature{
+
+    .architect,
+    .our-feature {
         padding-top: 20px;
         flex-direction: column;
-    }  
-    .architect-link{
+    }
+
+    .architect-link {
         margin-top: 20px;
-    }  
-    .hero, .our-feature-description{
+    }
+
+    .hero,
+    .our-feature-description {
         padding: 15px;
     }
-    .hero-description img{
+
+    .hero-description img {
         width: 100%;
     }
-    .our-feature-images{
+
+    .our-feature-images {
         grid-template-columns: 1fr;
     }
 }
